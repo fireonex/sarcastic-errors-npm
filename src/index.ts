@@ -24,7 +24,7 @@ const sarcasticMessages = [
     "Don't worry, this is just a sign that you're getting closer to the solution. Or not."
 ];
 
-export const throwError = (message: string): void => {
-    const randomMessage = sarcasticMessages[Math.floor(Math.random() * sarcasticMessages.length)];
-    console.error(`[ERROR] ${message}: ${randomMessage}`);
-};
+export const throwError = (message?: string) => {
+    const randomMessage = sarcasticMessages[Math.floor(Math.random() * sarcasticMessages.length)]
+    throw new Error(message || randomMessage)
+}
