@@ -1,6 +1,6 @@
 {
   "name": "sarcastic-errors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A library that throws sarcastic error messages.",
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
