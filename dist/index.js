@@ -25,6 +25,6 @@ const sarcasticMessages = [
 ];
 export const throwError = (message) => {
     const randomMessage = sarcasticMessages[Math.floor(Math.random() * sarcasticMessages.length)];
-    console.error(`[ERROR] ${message}: ${randomMessage}`);
+    throw new Error(message || randomMessage);
 };
 //# sourceMappingURL=index.js.map

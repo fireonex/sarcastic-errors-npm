@@ -1,1 +1,1 @@
-export declare const throwError: (message: string) => void;
+export declare const throwError: (message?: string) => never;
